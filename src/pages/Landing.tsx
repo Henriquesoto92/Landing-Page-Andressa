@@ -1,17 +1,26 @@
 import { Container, Flex } from "@mantine/core";
-import { useState } from "react";
-import { NavbarResponsive } from "../components/templates/navbar";
-
-const links = [{ link: "home", label: "home" }];
+import {
+  Feedbacks,
+  Footer,
+  Headers,
+  Navbar,
+  Persona,
+  Specialty,
+} from "../components/templates";
 
 function Landing() {
   return (
-    <Container bg="red">
-      <Flex bg="red" h="300px" w="300px">
-        {" "}
-        pronto
-      </Flex>
-    </Container>
+    <div>
+      <Container>
+        <Navbar />
+        <Feedbacks />
+        <Footer />
+        <Headers />
+        <Persona />
+
+        <Specialty />
+      </Container>
+    </div>
   );
 }
 
