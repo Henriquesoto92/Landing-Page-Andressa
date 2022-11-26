@@ -11,13 +11,12 @@ import {
 function Landing() {
   return (
     <div>
-      <Container>
+      <Container w="full">
         <Navbar />
         <Feedbacks />
         <Footer />
         <Headers />
         <Persona />
-
         <Specialty />
       </Container>
     </div>
