@@ -1,15 +1,6 @@
-import {
-  Header,
-  Menu,
-  Group,
-  Center,
-  Burger,
-  Container,
-  Flex,
-  Text,
-} from "@mantine/core";
+import { Header, Group, Burger, Flex, Text, Image } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconChevronDown } from "@tabler/icons";
+import { logoName2 } from "../../../assets";
 import { linksNavbar } from "./LinksUtils";
 import { useStyles } from "./useStyles";
 
@@ -31,22 +22,29 @@ export default function Navbar() {
   });
 
   return (
-    <Header height={56} className={classes.header} mb={120}>
-      <Container>
-        <div className={classes.inner}>
-          <Text> Dessa</Text>
-          <Group spacing={5} className={classes.links}>
-            {items}
-          </Group>
-          <Burger
-            opened={opened}
-            onClick={toggle}
-            className={classes.burger}
-            size="sm"
-            color="#fff"
-          />
-        </div>
-      </Container>
+    <Header className={classes.header} height={56}>
+      <Flex
+        justify="space-between"
+        align="center"
+        w="100%"
+        px="150px"
+        maw="1920px"
+      >
+        <Image src={logoName2} width="200px" />
+        <Group
+          spacing={5}
+          // className={classes.links}
+        >
+          {items}
+        </Group>
+        <Burger
+          opened={opened}
+          onClick={toggle}
+          className={classes.burger}
+          size="sm"
+          color="#fff"
+        />
+      </Flex>
     </Header>
   );
 }

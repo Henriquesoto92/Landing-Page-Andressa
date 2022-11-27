@@ -2,23 +2,15 @@ import { createStyles } from "@mantine/core";
 
 export const useStyles = createStyles((theme) => ({
   header: {
-    backgroundColor: theme.fn.variant({
-      variant: "filled",
-      color: theme.primaryColor,
-    }).background,
-    borderBottom: 0,
-  },
-
-  inner: {
-    height: 56,
     display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
+    justifyContent: "center",
+    alingItems: "center",
   },
-
   links: {
+    color: "#FFD700",
     [theme.fn.smallerThan("sm")]: {
       display: "none",
+      color: "#FFD700",
     },
   },
 

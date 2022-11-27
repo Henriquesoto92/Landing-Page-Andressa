@@ -10,16 +10,14 @@ import {
 
 function Landing() {
   return (
-    <div>
-      <Container w="full">
-        <Navbar />
-        <Feedbacks />
-        <Footer />
-        <Headers />
-        <Persona />
-        <Specialty />
-      </Container>
-    </div>
+    <Container maw="100vw" mah="100vh" p="0">
+      <Navbar />
+      <Feedbacks />
+      <Footer />
+      <Headers />
+      <Persona />
+      <Specialty />
+    </Container>
   );
 }
 
