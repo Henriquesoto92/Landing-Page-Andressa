@@ -413,6 +413,13 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@mantine/carousel@^5.9.0":
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-5.9.0.tgz#e5e1e8002e3db83fce949481408bc3f803a36509"
+  integrity sha512-M8MBBTyPPd9W2WljmJ9JXdYeCwe5E2eKGCmFUVSRGJf9Ykq9N2gxE7pPRhB+71G4S93zUNWa7BG8wGSiyR411g==
+  dependencies:
+    "@mantine/utils" "5.9.0"
+
 "@mantine/core@^5.4.1":
   version "5.8.2"
   resolved "https://registry.yarnpkg.com/@mantine/core/-/core-5.8.2.tgz#865d2a03522d59555cc51749487932d9ff899f98"
@@ -441,6 +448,11 @@
   version "5.8.2"
   resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.8.2.tgz#f33382a91b0b649fcacf96540c6267e2beac1bb5"
   integrity sha512-ZTxZeTyRO2l9dQ7pYsaV3AC7Cjz1HAPi1Ukd9GtiVYq74UuA3iBMLbPV4obxcHAqgUqgIHAP2ulCKHN3DPhaDQ==
+
+"@mantine/utils@5.9.0":
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.9.0.tgz#f21ba4c518a6561bea079c7c909298f35f492a99"
+  integrity sha512-UU5kO1VcsntrKvznJMjZ1S/ZM6arAXFkBnBqAKfCPOPJJIcwUWOfQP8u1sxp8ounAHThp9GtkpuzzGOQy1rcPA==
 
 "@radix-ui/number@1.0.0":
   version "1.0.0"
@@ -699,6 +711,18 @@ electron-to-chromium@^1.4.251:
   version "1.4.284"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz#61046d1e4cab3a25238f6bf7413795270f125592"
   integrity sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==
+
+embla-carousel-react@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.0.5.tgz#c6a079e382432335e34adb16bb11558df047760c"
+  integrity sha512-qhw980gKj7G+O5d3WSwj0TyhcbpGP3DqJPiAatt1t3wEEcZqn7csaIfLh4e1N/0kna9sZfZZRzz+//NSrUodSg==
+  dependencies:
+    embla-carousel "7.0.5"
+
+embla-carousel@7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.0.5.tgz#b43e590c072d06a5b11d4ce19d024f5f07a62862"
+  integrity sha512-loRcu0La0F7bhEMwbvgpi14iaaIEdwacH1xoplnaYfwN4KMgECkiuLgu4lx+v6MYd6lSpg/bw7ZxEuLUwYjavg==
 
 error-ex@^1.3.1:
   version "1.3.2"
