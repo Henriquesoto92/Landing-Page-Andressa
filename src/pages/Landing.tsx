@@ -12,11 +12,11 @@ function Landing() {
   return (
     <Container maw="100vw" mah="100vh" p="0">
       <Navbar />
-      <Feedbacks />
-      <Footer />
       <Headers />
       <Persona />
       <Specialty />
+      <Feedbacks />
+      <Footer />
     </Container>
   );
 }

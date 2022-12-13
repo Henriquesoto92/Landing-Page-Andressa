@@ -44,7 +44,7 @@ function Headers() {
 
   const slides = images.map((image) => (
     <Carousel.Slide key={image}>
-      <Image src={image} height={220} />
+      <Image src={image} h="300px" />
     </Carousel.Slide>
   ));
 
@@ -64,7 +64,6 @@ function Headers() {
             {slides}
           </Carousel>
         </Card.Section>
-        Headers
       </Flex>
     </Container>
   );
