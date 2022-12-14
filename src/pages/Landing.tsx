@@ -5,7 +5,7 @@ import {
   Headers,
   Navbar,
   Persona,
-  Specialty,
+  Specialyt,
 } from "../components/templates";
 
 function Landing() {
@@ -14,7 +14,7 @@ function Landing() {
       <Navbar />
       <Headers />
       <Persona />
-      <Specialty />
+      <Specialyt />
       <Feedbacks />
       <Footer />
     </Container>
