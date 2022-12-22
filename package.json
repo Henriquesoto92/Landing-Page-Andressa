@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "commit": "git add . && git commit && git push"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
