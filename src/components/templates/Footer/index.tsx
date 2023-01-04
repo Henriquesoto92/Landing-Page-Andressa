@@ -1,11 +1,8 @@
 import {
   ActionIcon,
-  Button,
   Center,
-  Container,
   Flex,
   Image,
-  NavLink,
   Text,
   UnstyledButton,
 } from "@mantine/core";
@@ -14,13 +11,13 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
-    <Container bg="teal.0" maw="100%" p="0">
+    <Flex bg="teal.0" maw="100vw" direction="column" align="center" p="0">
       <Flex
         maw="1920px"
         direction="row"
-        align="center"
+        justify="center"
         gap="40px"
-        justify="start"
+        align="center"
         p="20px 100px"
       >
         <Flex w="300px" direction="column" gap="10px">
@@ -32,11 +29,11 @@ function Footer() {
           <Flex gap="10px" direction="column" w="fit-content">
             <Text>Siga minhas redes socias</Text>
             <Flex justify="center" w="100%" gap="10px">
-              <ActionIcon size="xl" variant="outline" radius="xl">
-                <FaWhatsapp size={32} />
+              <ActionIcon size="xl" variant="light" radius="xl" bg="green.2">
+                <FaWhatsapp size={24} color="white" />
               </ActionIcon>
-              <ActionIcon size="xl" variant="outline" radius="xl">
-                <FaInstagram size={32} />
+              <ActionIcon size="xl" variant="light" radius="xl" bg="green.2">
+                <FaInstagram size={24} color="white" />
               </ActionIcon>
             </Flex>
           </Flex>
@@ -61,7 +58,7 @@ function Footer() {
           feito pelo ProgramadorAos30
         </UnstyledButton>
       </Center>
-    </Container>
+    </Flex>
   );
 }
 

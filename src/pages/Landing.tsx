@@ -10,7 +10,7 @@ import {
 
 function Landing() {
   return (
-    <Container maw="100vw" mah="100vh" p="0">
+    <Container maw="100vw" h="100vh" p="0">
       <Navbar />
       <Headers />
       <Persona />

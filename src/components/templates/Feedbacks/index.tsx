@@ -1,13 +1,4 @@
-import {
-  Avatar,
-  Card,
-  Container,
-  Flex,
-  Grid,
-  Image,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Avatar, Card, Flex, Text, Title } from "@mantine/core";
 
 function Feedbacks() {
   const specialyts = [
@@ -42,8 +33,8 @@ function Feedbacks() {
   ];
 
   return (
-    <Container bg="teal.0" maw="1920px" p="20px 200px">
-      <Flex w="full" direction="row" align="center" gap="40px">
+    <Flex maw="100vw" justify="center" p="20px 200px">
+      <Flex w="100%" maw="1920px" direction="row" align="center" gap="40px">
         {specialyts.map((specialyt, index) => (
           <Card
             key={`${specialyt.name}${index}`}
@@ -59,7 +50,7 @@ function Feedbacks() {
           </Card>
         ))}
       </Flex>
-    </Container>
+    </Flex>
   );
 }
 

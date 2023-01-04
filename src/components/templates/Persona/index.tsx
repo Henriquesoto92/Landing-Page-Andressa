@@ -3,13 +3,19 @@ import { Container, Flex, Image, Text, Title } from "@mantine/core";
 
 function Persona() {
   return (
-    <Container bg="white" maw="1920px" p="20px 200px">
-      <Flex w="full" direction="column" align="center" gap="40px">
+    <Flex
+      bg="white"
+      maw="100vw"
+      // direction="column"
+      // align="center"
+      p="20px 200px"
+    >
+      <Flex maw="1920px" direction="column" align="center" gap="40px">
         <Title color="red.3" order={1}>
           Especialista em Saúde Pélvica e Obstétrica
         </Title>
 
-        <Flex gap="100px">
+        <Flex gap="100px" justify="center">
           <Text color="teal.3" maw="50%">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Perferendis distinctio est minus, cum provident asperiores
@@ -38,7 +44,7 @@ function Persona() {
           />
         </Flex>
       </Flex>
-    </Container>
+    </Flex>
   );
 }
 

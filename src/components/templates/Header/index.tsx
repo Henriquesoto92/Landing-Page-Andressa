@@ -49,8 +49,8 @@ function Headers() {
   ));
 
   return (
-    <Container bg="yellow.1">
-      <Flex h="300px" w="full">
+    <Flex bg="yellow.1" maw="100vw" justify="center">
+      <Flex h="300px" maw="1920px" justify="center">
         <Card.Section>
           <Carousel
             withIndicators
@@ -65,7 +65,7 @@ function Headers() {
           </Carousel>
         </Card.Section>
       </Flex>
-    </Container>
+    </Flex>
   );
 }
 

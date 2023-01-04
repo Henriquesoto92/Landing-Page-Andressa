@@ -35,7 +35,13 @@ function Specialyt() {
   ];
 
   return (
-    <Container bg="teal.0" maw="1920px" p="20px 200px">
+    <Flex
+      bg="teal.0"
+      maw="100vw"
+      direction="column"
+      align="center"
+      p="20px 200px"
+    >
       <Flex w="full" direction="column" align="center" gap="40px">
         <Grid grow>
           {specialyts.map((specialyt, index) => (
@@ -48,7 +54,7 @@ function Specialyt() {
           ))}
         </Grid>
       </Flex>
-    </Container>
+    </Flex>
   );
 }
 
