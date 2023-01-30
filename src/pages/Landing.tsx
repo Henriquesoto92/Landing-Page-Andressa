@@ -1,4 +1,4 @@
-import { Container, Flex } from "@mantine/core";
+import { Container } from "@mantine/core";
 import {
   Feedbacks,
   Footer,

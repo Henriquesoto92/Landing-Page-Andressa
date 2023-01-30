@@ -20,7 +20,7 @@ function Footer() {
         align="center"
         p="20px 100px"
       >
-        <Flex w="300px" direction="column" gap="10px">
+        <Flex w="fit-content" direction="column" gap="10px">
           <Flex w="fit-content">
             <Image src={logoFull} alt="logo full" height={100} fit="contain" />
           </Flex>
@@ -38,7 +38,7 @@ function Footer() {
             </Flex>
           </Flex>
         </Flex>
-        <Flex w="300px" direction="column" gap="20px">
+        <Flex w="fit-content" direction="column" gap="20px">
           <Flex direction="column" gap="5px">
             <Text color="pink.2">Telefone:</Text>
             <Text color="green.4">(51) 99999.9999</Text>
