@@ -33,28 +33,60 @@ function Feedbacks() {
   ];
 
   return (
-    <Flex maw="100vw" justify="center" p="20px 200px">
-      <Flex w="100%" maw="1920px" direction="row" align="center" gap="40px">
-        {specialyts.map((specialyt, index) => (
-          <Card
-            key={`${specialyt.name}${index}`}
-            shadow="sm"
-            radius="lg"
-            bg="white"
-            w="200px"
-            h="200px"
-          >
-            <Flex direction="column" justify="center">
-              <Title align="center" size="24px">
-                {specialyt.name}
-              </Title>
+    <Flex
+      maw="100vw"
+      justify="center"
+      p={{ xs: "20px", md: "20px 200px" }}
+      bg="yellow.0"
+    >
+      <Flex
+        w="100%"
+        maw="1920px"
+        justify="center"
+        direction="column"
+        align="center"
+        gap="40px"
+      >
+        <Title align="center" fz="36px" fw={700} color={"pink.1"}>
+          FeedBacks
+        </Title>
 
-              <Text fs="12px" FontWeight="16px">
-                "{specialyt.description}"
-              </Text>
-            </Flex>
-          </Card>
-        ))}
+        <Flex
+          w="100%"
+          maw="1920px"
+          justify="center"
+          direction={{ xs: "column", sm: "row" }}
+          align="center"
+          gap={{ xs: "20px", sm: "20px", md: "40px" }}
+        >
+          {specialyts.map((specialyt, index) => (
+            <Card
+              key={`${specialyt.name}${index}`}
+              shadow="sm"
+              radius="lg"
+              bg="white"
+              w={{ xs: "100%", sm: "200px" }}
+              h="200px"
+              p="xs"
+            >
+              <Flex direction="column" justify="center" gap="20px">
+                <Title align="center" fz="20px" fw={700} color={"pink.1"}>
+                  {specialyt.name}
+                </Title>
+
+                <Text
+                  fz="16px"
+                  fw={400}
+                  color={"cyan.3"}
+                  lineClamp={7}
+                  lh="19px"
+                >
+                  "{specialyt.description}"
+                </Text>
+              </Flex>
+            </Card>
+          ))}
+        </Flex>
       </Flex>
     </Flex>
   );
