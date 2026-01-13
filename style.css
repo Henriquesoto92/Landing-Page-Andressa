@@ -222,6 +222,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
 }
 
 .btn-whatsapp:hover {
@@ -243,8 +244,6 @@ body {
 /* Hero Section */
 .hero {
   background: var(--gradient-bg);
-  padding: 32px 0 32px;
-  margin-top: 72px;
 }
 
 .hero-logo {
@@ -262,16 +261,21 @@ body {
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   gap: 60px;
   align-items: center;
+  padding: 32px 0 32px;
+  margin-top: 72px;
+  width: 100%;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 532px;
+  width: 100%;
 }
 
 .hero-name {
@@ -328,6 +332,8 @@ body {
 .hero-image {
   display: flex;
   justify-content: center;
+  max-width: 532px;
+  width: 100%;
 }
 .hero-image-div {
   position: relative;
@@ -337,7 +343,7 @@ body {
 .hero-frame-image {
   position: relative;
   width: 100%;
-  max-width: 375px;
+  max-width: 532px;
   height: auto;
   object-fit: cover;
   padding: 8px;
@@ -539,8 +545,8 @@ body {
 }
 
 .specialization-icon {
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   background: #ffe4e6;
   border-radius: 50%;
   display: flex;
@@ -568,11 +574,10 @@ body {
   font-size: 36px;
   color: var(--dark-gray);
   text-align: center;
-  margin: 0 0 20px 0;
 }
 
 .services .divider {
-  margin: 0 auto 52px auto;
+  margin: 0 auto 24px auto;
 }
 
 .services-grid {
@@ -652,7 +657,6 @@ body {
   font-size: 36px;
   color: var(--dark-gray);
   text-align: center;
-  margin: 0 0 20px 0;
 }
 
 .testimonials .divider {
@@ -722,6 +726,11 @@ body {
   margin: 0 0 32px 0;
 }
 
+.cta-section-button {
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer */
 .footer {
   background: var(--dark-gray);
@@ -789,6 +798,10 @@ body {
   text-decoration: none;
   transition: transform 0.3s ease;
 }
+.social-link img {
+  width: 24px;
+  height: 24px;
+}
 
 .social-link:hover {
   transform: scale(1.1);
@@ -836,6 +849,10 @@ body {
 
   .navigation {
     display: none;
+  }
+
+  .services {
+    padding: 24px 0;
   }
 
   .mobile-navigation {
@@ -899,8 +916,7 @@ body {
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -927,6 +943,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .testimonials {
+    padding: 24px 0;
+  }
+
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
@@ -934,6 +954,10 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .cta-section {
+    padding: 24px 0;
   }
 
   .cta-section h2 {
