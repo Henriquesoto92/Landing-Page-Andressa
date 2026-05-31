@@ -1,0 +1,21 @@
+{
+  "name": "Andressa Soto — Fisioterapeuta Pélvica",
+  "short_name": "Andressa Soto",
+  "description": "Fisioterapeuta pélvica em Porto Alegre. Atendimento a domicílio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e11d48",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
