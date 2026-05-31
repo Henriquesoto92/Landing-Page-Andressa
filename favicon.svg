@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gold" x1="15%" y1="5%" x2="85%" y2="95%">
+      <stop offset="0%"  stop-color="#a07628"/>
+      <stop offset="35%" stop-color="#e8d080"/>
+      <stop offset="65%" stop-color="#caa26a"/>
+      <stop offset="100%" stop-color="#8a6020"/>
+    </linearGradient>
+  </defs>
+  <text
+    x="50"
+    y="82"
+    font-family="'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif"
+    font-size="94"
+    font-style="italic"
+    font-weight="normal"
+    text-anchor="middle"
+    fill="url(#gold)"
+  >A</text>
+</svg>
