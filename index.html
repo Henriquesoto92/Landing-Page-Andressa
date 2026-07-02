@@ -208,7 +208,7 @@
     <link rel="preload" as="image" href="photo-1.webp" />
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -271,19 +271,26 @@
           <div class="hero-content">
             <div class="hero-text">
               <img src="logo-name.png" alt="Andressa Soto — Fisioterapeuta Pélvica" class="hero-logo" width="220" height="66" loading="eager" />
-              <h1 class="hero-title">Fisioterapeuta Pélvica</h1>
+              <h1 class="hero-title">Fisioterapeuta <em>Pélvica</em></h1>
               <p class="hero-credentials">CREFITO 342509-F</p>
               <ul class="hero-features">
                 <li>
-                  <span>🤰🏻 Preparação para parto e pós-parto</span>
+                  <span class="hero-feature-icon">
+                    <img src="icon-baby.svg" alt="" width="20" height="20" aria-hidden="true" />
+                  </span>
+                  <span>Preparação para parto e pós-parto</span>
                 </li>
                 <li>
-                  <span>🌺 Saúde íntima sem tabus</span>
+                  <span class="hero-feature-icon">
+                    <img src="icon-female.svg" alt="" width="20" height="20" aria-hidden="true" />
+                  </span>
+                  <span>Saúde íntima sem tabus</span>
                 </li>
               </ul>
               <a
                 href="https://wa.me/5551981480889"
                 target="_blank"
+                class="hero-cta"
                 style="text-decoration: none"
               >
                 <button class="btn-primary">Agende sua consulta</button>
@@ -327,12 +334,13 @@
       <div class="container">
         <section class="about-section">
           <!-- Sobre Mim -->
-          <div class="about-photo">
+          <div class="about-photo reveal">
             <div>
               <img src="photo-2.webp" alt="Andressa Soto com modelo anatômico durante atendimento" loading="lazy" width="400" height="480" />
             </div>
           </div>
-          <div class="about-card">
+          <div class="about-card reveal" style="--d: 0.15s">
+            <p class="eyebrow">Minha história</p>
             <h2>Sobre Mim</h2>
             <div class="divider"></div>
             <p class="about-text">
@@ -351,10 +359,16 @@
       </div>
       <!-- Quem Sou Eu -->
 
+      <div class="wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C240,64 480,8 720,24 C960,40 1200,8 1440,32 L1440,64 L0,64 Z" fill="#fdf1f3" />
+        </svg>
+      </div>
       <section class="who-section-bg">
         <div class="container">
           <div class="who-section">
-            <div class="who-card" id="sobre">
+            <div class="who-card reveal" id="sobre">
+              <p class="eyebrow">Além do consultório</p>
               <h2>Quem Sou Eu</h2>
               <div class="divider"></div>
               <div class="personal-facts">
@@ -384,7 +398,7 @@
                 </div>
               </div>
             </div>
-            <div class="who-photo">
+            <div class="who-photo reveal" style="--d: 0.15s">
               <div>
                 <img src="photo-3.webp" alt="Andressa Soto com modelos anatômicos do assoalho pélvico" loading="lazy" width="400" height="480" />
               </div>
@@ -392,27 +406,33 @@
           </div>
         </div>
       </section>
+      <div class="wave wave-flip" aria-hidden="true">
+        <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C240,64 480,8 720,24 C960,40 1200,8 1440,32 L1440,64 L0,64 Z" fill="#fdf1f3" />
+        </svg>
+      </div>
 
       <section class="services" id="servicos">
         <div class="container">
-          <h2>Meus Serviços</h2>
-          <div class="divider"></div>
+          <p class="eyebrow reveal">Como posso te ajudar</p>
+          <h2 class="reveal">Meus Serviços</h2>
+          <div class="divider reveal"></div>
           <div class="services-grid">
-            <div class="service-card">
+            <div class="service-card reveal">
               <div class="service-icon">
                 <img src="icon-baby.svg" alt="" width="48" height="48" loading="lazy" aria-hidden="true" />
               </div>
               <h3>Preparação para Parto</h3>
               <p>Preparação completa para parto e recuperação pós-parto</p>
             </div>
-            <div class="service-card">
+            <div class="service-card reveal" style="--d: 0.1s">
               <div class="service-icon">
                 <img src="icon-hearth.svg" alt="" width="48" height="48" loading="lazy" aria-hidden="true" />
               </div>
               <h3>Reabilitação Pélvica</h3>
               <p>Fortalecimento e reabilitação da musculatura pélvica</p>
             </div>
-            <div class="service-card">
+            <div class="service-card reveal" style="--d: 0.2s">
               <div class="service-icon">
                 <img src="icon-shield.svg" alt="" width="48" height="48" loading="lazy" aria-hidden="true" />
               </div>
@@ -421,14 +441,14 @@
                 Tratamento especializado para incontinência urinária e fecal
               </p>
             </div>
-            <div class="service-card">
+            <div class="service-card reveal" style="--d: 0.3s">
               <div class="service-icon">
                 <img src="icon-female.svg" alt="" width="48" height="48" loading="lazy" aria-hidden="true" />
               </div>
               <h3>Saúde Íntima</h3>
               <p>Melhora da dor em relações sexuais e saúde íntima</p>
             </div>
-            <div class="service-card">
+            <div class="service-card reveal" style="--d: 0.4s">
               <div class="service-icon">
                 <img src="icon-chat.svg" alt="" width="48" height="48" loading="lazy" aria-hidden="true" />
               </div>
@@ -442,18 +462,19 @@
       <!-- Testimonials Section -->
       <section class="testimonials">
         <div class="container">
-          <h2>Depoimentos</h2>
-          <div class="divider"></div>
+          <p class="eyebrow reveal">Quem já passou por aqui</p>
+          <h2 class="reveal">Depoimentos</h2>
+          <div class="divider reveal"></div>
           <div class="testimonials-grid">
-            <div class="testimonial-card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="testimonial-card reveal">
+              <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
               <blockquote>
                 "Fisioterapeuta maravilhosa, recomendo muito!!"
               </blockquote>
               <cite>- M.B.</cite>
             </div>
-            <div class="testimonial-card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="testimonial-card reveal" style="--d: 0.15s">
+              <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
               <blockquote>
                 "Excelente profissional, extremamente simpática, querida, te
                 auxilia em tudo que precisas. Não me senti envergonhada em
@@ -462,8 +483,8 @@
               </blockquote>
               <cite>- M.K.</cite>
             </div>
-            <div class="testimonial-card">
-              <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="testimonial-card reveal" style="--d: 0.3s">
+              <div class="stars" role="img" aria-label="5 estrelas">★★★★★</div>
               <blockquote>
                 "Resultados excelentes! Minha qualidade de vida melhorou muito."
               </blockquote>
@@ -476,9 +497,9 @@
       <!-- Call to Action Section -->
       <section class="cta-section">
         <div class="container">
-          <h2>Cuide da sua saúde íntima com quem entende do assunto</h2>
-          <p>Vamos juntas nessa jornada?</p>
-          <div class="cta-section-button">
+          <h2 class="reveal">Cuide da sua saúde íntima com quem entende do assunto</h2>
+          <p class="reveal" style="--d: 0.12s">Vamos juntas nessa jornada?</p>
+          <div class="cta-section-button reveal" style="--d: 0.24s">
             <a
               href="https://wa.me/5551981480889"
               target="_blank"
@@ -609,6 +630,29 @@
             mobileNavigation.classList.remove("active");
           }
         });
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll(".reveal");
+        const reducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        if (reducedMotion || !("IntersectionObserver" in window)) {
+          reveals.forEach((el) => el.classList.add("visible"));
+        } else {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+          );
+          reveals.forEach((el) => observer.observe(el));
+        }
       });
     </script>
   </body>
