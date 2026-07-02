@@ -172,6 +172,7 @@ button:focus-visible {
 
 .logo {
   height: 50px;
+  width: auto;
 }
 
 .navigation ul {
@@ -391,6 +392,7 @@ button:focus-visible {
 .hero-logo {
   width: 100%;
   max-width: 470px;
+  height: auto;
 }
 
 .hero-content {
